@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+//@flow
+import React from 'react'
+import './App.css'
+import {MouseTracker} from './Components/Mouse'
+// import First from './Components/First'
+import {Second} from './Components/Second'
+// import ComponentOne from './Components/ComponentOne'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ height: '100%', width: '100%' }}>
+      {/*<MouseTracker />*/}
+      {/*<First testProp={12}/>*/}
+      <Second testProp={12}/>
+      {/*<React.StrictMode>*/}
+      {/*  <div>*/}
+      {/*    <ComponentOne />*/}
+      {/*  </div>*/}
+      {/*</React.StrictMode>*/}
     </div>
   );
 }
 
-export default App;
+export default App
